@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    var myList = ViewBag.MyList;
+
+    List<String> List2 = new List<string>();
+    for (var i = 0; i < myList.Count; i++)
+    {
+        <p>@myList[i]</p>
+    }
+}
